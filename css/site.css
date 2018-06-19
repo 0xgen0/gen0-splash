@@ -72,23 +72,64 @@ body {
   background-color:#8025FA;
 }
 #footer .content {
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
   color:#1B1862;
 }
-#footer--copyright {
-  flex:1;
+#footer--copyright, #footer--icons {
+  width:25rem;
 }
 #footer--newsletter {
   flex:1;
+  padding:0 2.4rem;
+  text-align:center;
+}
+#footer--newsletter form {
+  width:100%;
+  max-width:48rem;
+  margin:0 auto;
+}
+#footer--newsletter .flex {
+  justify-content:center;
+}
+#footer--newsletter input[type=email] {
+  flex:1;
+  padding:1.2rem 2rem;
+  margin:0 1.2rem 0 0;
+  color:#8025FA;
+  background-color:#FFFFFF;
+  border-radius:0.4rem;
+  border:none;
+  box-shadow:0 0.2rem 0.2rem #1B1862;
+  font-size:1.6rem;
+}
+#footer--newsletter input[type=email]:focus {
+  outline:none;
+}
+#footer--newsletter input[type=email]::placeholder {
+  color:#8025FA;
+}
+#footer--newsletter input[type=submit] {
+  padding:1.2rem 2rem;
+  color:#1B1862;
+  background-color:#FB1FC2;
+  border-radius:0.4rem;
+  border:none;
+  box-shadow:0 0.2rem 0.2rem #1B1862;
+  font-size:1.6rem;
+}
+#footer--newsletter input[type=submit]:focus, #footer--newsletter input[type=submit]:hover {
+  cursor:pointer;
+  outline:none;
+  color:#FFFFFF;
+  background-color:#1B1862;
 }
 #footer p {
   padding:0;
   margin:0;
   font-size:1.6rem;
 }
-#footer--icons {
-}
+#footer--icons {}
 #footer--icons ul {
   margin:0;
   padding:0;
@@ -110,6 +151,9 @@ body {
   margin:0;
   background-color:#1B1862;
   border-radius:100%;
+}
+#footer--icons li a:hover {
+  background-color:#FB1FC2;
 }
 #footer--icons li svg {
   display:inline;
